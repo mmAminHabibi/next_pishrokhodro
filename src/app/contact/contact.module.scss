@@ -1,0 +1,28 @@
+@use "@/styles/colors" as colors;
+.contact{
+
+  &-info{
+    ul{
+      li{
+        i{
+          width: 32px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          border: 1px solid colors.$second-color;
+          &:hover{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+:global(.rmdp-container){
+  width: 100%!important;
+}

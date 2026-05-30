@@ -1,0 +1,47 @@
+@use "@/styles/colors" as colors;
+.home-banner{
+  //background: #F8F8F8;
+  &-image{
+    border-radius: 0 15px 15px 0;
+    img{
+      transition: all .6s ease!important;
+    }
+    &:hover{
+      img{
+        scale: 1.1;
+      }
+    }
+  }
+  &-content{
+    background: white;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0 30px 80px 0 rgba(0, 0, 0, 0.04);
+    outline: 32px solid white;
+    a{
+      background: white;
+      border-radius: 25px;
+      border: 1px solid colors.$first-color;
+      z-index: 1;
+      &:after{
+        content: "";
+        position: absolute;
+        background: colors.$first-color;
+        width: 0;
+        height: 100%;
+        border-radius: 25px;
+        left: 0;
+        right: auto;
+        top: 0;
+        z-index: -1;
+      }
+      &:hover{
+        color: white;
+        &:after{
+          left: auto;
+          right: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

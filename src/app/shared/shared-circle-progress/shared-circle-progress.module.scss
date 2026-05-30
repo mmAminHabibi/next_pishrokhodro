@@ -1,0 +1,7 @@
+@use "@/styles/colors"  as colors;
+.circle{
+  stroke: rgba(colors.$second-color , .5)
+}
+.active-circle{
+  stroke: colors.$first-color;
+}

@@ -1,0 +1,45 @@
+@use "@/styles/colors"  as colors;
+
+.products-details{
+  &-banner{
+    aspect-ratio: 16/5.8;
+    background-position: center;
+    background-size: cover;
+    &:after{
+      //content: '';
+      position: absolute;
+      right: -30%;
+      top: -10%;
+      width: 70%;
+      aspect-ratio: 1;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      rotate: 45deg;
+    }
+  }
+  &-content{
+    &-image{
+      border-radius: 14px;
+    }
+    p{
+      line-height: 40px;
+    }
+    &-info{
+      p{
+        line-height: 50px!important;
+      }
+    }
+  }
+}
+.catalog{
+  font-size: 20px;
+  @media (max-width: 990px) {
+    font-size: 10px;
+  }
+  p{
+    font-size: 20px;
+    @media (max-width: 990px) {
+      font-size: 10px;
+    }
+  }
+}

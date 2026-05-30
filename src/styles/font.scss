@@ -1,0 +1,213 @@
+
+@font-face {
+  font-family: 'Peyda';
+  src: url('/font/Peyda-Regular.ttf') format('ttf'),
+  url('/font/PeydaWeb-Regular.woff2') format('woff2');
+}
+
+
+
+*:not(i) {
+  line-height: 1.5;
+  font-family: "Peyda", serif !important;
+  //font-feature-settings: "kern" on, "liga" on, "calt" on;
+  transition: 0.5s ease all;
+}
+
+.fs-12px {
+  font-size: 12px;
+}
+
+.fs-14px {
+  font-size: 14px;
+}
+
+.fs-16px {
+  font-size: 16px;
+}
+
+.fs-18px {
+  font-size: 18px;
+}
+
+.fs-20px {
+  font-size: 20px;
+}
+
+.fs-22px {
+  font-size: 22px;
+}
+
+.fs-24px {
+  font-size: 24px;
+}
+
+.fs-26px {
+  font-size: 26px;
+}
+
+.fs-28px {
+  font-size: 28px;
+}
+
+.fs-30px {
+  font-size: 30px;
+}
+
+.fs-36px {
+  font-size: 36px;
+}
+
+
+// xxl
+@media only screen and (max-width: 1400px) {
+
+}
+
+
+// xl
+@media only screen and (max-width: 1200px) {
+  .fs-xl-12px {
+    font-size: 12px!important;
+  }
+
+  .fs-xl-14px {
+    font-size: 14px!important;
+  }
+
+  .fs-xl-16px {
+    font-size: 16px!important;
+  }
+
+  .fs-xl-18px {
+    font-size: 18px!important;
+  }
+
+  .fs-xl-20px {
+    font-size: 20px!important;
+  }
+
+  .fs-xl-22px {
+    font-size: 22px!important;
+  }
+
+  .fs-xl-24px {
+    font-size: 24px!important;
+  }
+
+  .fs-xl-26px {
+    font-size: 26px!important;
+  }
+
+  .fs-xl-28px {
+    font-size: 28px!important;
+  }
+
+  .fs-xl-30px {
+    font-size: 30px!important;
+  }
+
+  .fs-xl-36px {
+    font-size: 36px!important;
+  }
+}
+
+
+// lg
+@media only screen and (min-width: 992px) {
+  .fs-lg-12px {
+    font-size: 12px!important;
+  }
+
+  .fs-lg-14px {
+    font-size: 14px!important;
+  }
+
+  .fs-lg-16px {
+    font-size: 16px!important;
+  }
+
+  .fs-lg-18px {
+    font-size: 18px!important;
+  }
+
+  .fs-lg-20px {
+    font-size: 20px!important;
+  }
+
+  .fs-lg-22px {
+    font-size: 22px!important;
+  }
+
+  .fs-lg-24px {
+    font-size: 24px!important;
+  }
+
+  .fs-lg-26px {
+    font-size: 26px!important;
+  }
+
+  .fs-lg-28px {
+    font-size: 28px!important;
+  }
+
+  .fs-lg-30px {
+    font-size: 30px!important;
+  }
+
+  .fs-lg-36px {
+    font-size: 36px!important;
+  }
+
+}
+
+// sm
+@media only screen and (max-width: 576px) {
+  .fs-16px {
+    font-size: 16px!important;
+  }
+
+  .fs-18px {
+    font-size: 16px!important;
+  }
+
+  .fs-20px {
+    font-size: 18px!important;
+  }
+
+  .fs-22px {
+    font-size: 20px!important;
+  }
+
+  .fs-24px {
+    font-size: 18px!important;
+  }
+
+  .fs-26px {
+    font-size: 24px!important;
+  }
+
+  .fs-28px {
+    font-size: 26px!important;
+  }
+
+  .fs-36px {
+    font-size: 34px!important;
+  }
+
+}
+
+.fw-bold {
+  font-family: 'Peyda' !important;
+  font-weight: bold !important;
+}
+
+.fw-bolder {
+  font-family: 'Peyda' !important;
+  font-weight: bolder !important;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+

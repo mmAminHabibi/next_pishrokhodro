@@ -1,0 +1,40 @@
+@use "@/styles/colors" as colors;
+
+.about{
+  background: #eaebf03d;
+  p{
+    text-align: justify!important;
+    line-height: 40px;
+  }
+}
+
+.image-wrapper {
+  overflow: hidden;
+  aspect-ratio: 3/2;
+  position: relative;
+  img{
+    border-radius: 14px;
+  }
+}
+
+.image-animate {
+  width: 0;
+  height: 100%;
+  transition: width 1.5s ease;
+}
+
+.image-animate.active {
+  width: 100%;
+}
+
+
+button{
+  &:hover{
+    background-color: colors.$first-color !important;
+    border : 1px solid colors.$first-color !Important;
+    color: white!important;
+  }
+  &:focus{
+    outline: none!important;
+  }
+}

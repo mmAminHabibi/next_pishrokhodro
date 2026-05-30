@@ -1,0 +1,58 @@
+@use "@/styles/colors"  as colors;
+
+.shared-filter-category {
+  a {
+    border-radius: 25px;
+    border: 1px solid rgba(colors.$first-color, 0.2);
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: -8px;
+      background: colors.$first-color;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+
+      transition:
+              right .4s ease .4s,
+              transform .2s ease .2s,
+              width 0.2s ease ;
+    }
+
+    &:hover:after {
+      right: 8px;
+    }
+  }
+
+  .active:after {
+    transform: scale(50);
+  }
+}
+
+:global(.shared-filter-category-item.active) {
+  color: white!important;
+
+  img {
+    filter: colors.$filter-second;
+  }
+
+  &:after {
+    right: 8px;
+    transform: scale(6.5);
+    z-index: 0;
+    width: 100%;
+    aspect-ratio: unset;
+
+    transition:
+            right .2s ease,
+            transform .2s ease .2s,
+            width 0.4s ease .4s;
+  }
+}
+
+.shared-filter-category[data-disabled="true"] {
+  pointer-events: none;
+}

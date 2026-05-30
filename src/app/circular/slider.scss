@@ -1,0 +1,33 @@
+@use "@/styles/colors" as colors;
+
+.circular{
+  &-info{
+    p{
+      text-align: justify!important;
+      line-height: 50px!important;
+    }
+  }
+  &-slider{
+    background: colors.$second-color;
+    border-radius: 15px;
+    &-items{
+
+    }
+  }
+}
+
+.circular-box {
+  .circular-box-image img {
+    transition: all .8s ease!important;
+  }
+
+  &:hover {
+    .circular-box-image img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.btn:hover{
+  background-color: colors.$first-color;
+}

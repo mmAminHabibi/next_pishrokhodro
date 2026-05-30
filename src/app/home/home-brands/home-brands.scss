@@ -1,0 +1,10 @@
+
+.brands{
+  //background: #F8F8F8;
+  &-image{
+    transition: all .4s ease;
+    &:hover{
+      scale: 1.2!important;
+    }
+  }
+}

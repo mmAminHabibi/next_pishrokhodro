@@ -1,0 +1,62 @@
+@use "@/styles/colors"  as colors;
+
+
+.footer{
+  font-family: 'IRANSans', sans-serif;
+  direction: rtl;
+  text-align: right;
+
+  h6 {
+    color: #0d1b2a;
+    font-size: 16px;
+  }
+
+  a{
+    color: #444;
+    text-decoration: none;}
+
+  li{
+    a {
+      color: #444;
+      text-decoration: none;
+      transition: all 0.5s;
+
+      &:hover {
+        color: colors.$first-color;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  input {
+    border: 1px solid #ccc;
+    padding: 18px 12px;
+    font-size: 14px;
+  }
+
+  //button {
+  //  width: 40px;
+  //  height: 40px;
+  //  font-size: 18px;
+  //  line-height: 1;
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //  left: 12px;
+  //  top: 10px;
+  //  position: absolute;
+  //}
+
+  small {
+    color: #666;
+  }
+
+}
+.enamad{
+  img{
+    transition: all 0.5s;
+    &:hover {
+      scale: 1.3!important;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.questions {
+  &-info{
+    p{
+      text-align: justify;
+      line-height: 40px;
+    }
+  }
+  &-sections {
+    &-items {
+      border-radius: 10px !important;
+      button {
+        border-radius: 10px !important;
+      }
+      .accordion-content {
+        overflow: hidden;
+        max-height: 0;
+        transition: all .8s ease;
+        &.open {
+          height: 100%;
+          padding: 3rem;
+          @media (max-width: 990px) {
+            padding: 5rem;
+          }
+        }
+      }
+    }
+  }
+}

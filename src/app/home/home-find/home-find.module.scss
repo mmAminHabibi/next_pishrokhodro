@@ -1,0 +1,34 @@
+@use "@/styles/colors"  as colors;
+
+.find {
+  background: url("/images/background.jpg") no-repeat center bottom;
+  width: 100%;
+  height: 100%;
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    cursor: pointer;
+    i{
+      color: #fff;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 5%;
+  }
+
+  .swiper-button-next {
+    right: 5%;
+  }
+}
+
+

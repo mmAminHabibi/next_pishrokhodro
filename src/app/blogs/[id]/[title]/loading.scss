@@ -1,0 +1,52 @@
+
+.loading-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 9999;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  .befor-div-app:before{
+    background-image: none;
+  }
+  .div-right-1 img{
+    display: none;
+  }
+}
+
+.loader {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: #644e8d;
+  text-shadow: 0 0 2px #FFF, 0 0 1px #FFF;
+  letter-spacing: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.loader::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #dba681;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: animloader 3s linear infinite;
+}
+
+@keyframes animloader {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+
+

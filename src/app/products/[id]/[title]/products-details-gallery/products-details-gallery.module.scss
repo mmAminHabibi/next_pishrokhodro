@@ -1,0 +1,8 @@
+.products-details-gallery{
+  position: relative;
+  cursor: pointer;
+}
+:global(.swiper-slide-active) .products-details-gallery-item {
+  scale: 1.1;
+}
+

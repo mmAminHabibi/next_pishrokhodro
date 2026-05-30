@@ -1,0 +1,17 @@
+@use "@/styles/colors"  as colors;
+
+.registration{
+  &-info{
+    background: rgb(12, 12, 12);
+    border-radius: 10px;
+    h4{
+      line-height: 50px;
+      text-align: justify;
+    }
+
+  }
+}
+.highlight{
+  font-weight: bold!important;
+  color: yellow;
+}

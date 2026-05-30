@@ -1,0 +1,101 @@
+@use "@/styles/colors"  as colors;
+
+.shared-product-card {
+  border-radius: 18px;
+  &-info {
+    a {
+      color: white;
+      background: colors.$first-color;
+      border-radius: 16px;
+      padding: 12px 28px;
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 500;
+      cursor: pointer;
+      overflow: hidden;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid colors.$first-color;
+        opacity: 0;
+        animation: pulseRing 2.5s linear infinite;
+      }
+
+      // حلقه دوم با تأخیر
+      &::after {
+        animation-delay: 1.25s; // نصف زمان حلقه
+      }
+    }
+  }
+
+  @keyframes pulseRing {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.7;
+    }
+    70% {
+      transform: translate(-50%, -50%) scale(1.8);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  &-image {
+    border-radius: 12px;
+    &-sacrifice{
+      z-index: 11!important;
+      background: colors.$second-color;
+      padding: 5px 10px;
+      border-radius: 0 12px 0 12px;
+    }
+    img{
+      transition: all .8s ease!important;
+    }
+  }
+  &:hover img {
+    scale: 1.1;
+  }
+
+}
+@keyframes pulseOutline {
+  0% {
+    box-shadow: 0 0 0 0 rgba(colors.$first-color, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(colors.$first-color, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(colors.$first-color, 0);
+  }
+}
+
+// انیمیشن دوم (کندتر و بزرگ‌تر)
+@keyframes pulseOutline2 {
+  0% {
+    box-shadow: 0 0 0 0 rgba(colors.$first-color, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 22px rgba(colors.$first-color, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(colors.$first-color, 0);
+  }
+}
+
+.shared-product-card-image-coming{
+  background: rgba(colors.$second-color , .3);
+  border: 1px solid colors.$second-color ;
+  border-radius: 50px;
+  color: colors.$first-color;
+  z-index: 99;
+}

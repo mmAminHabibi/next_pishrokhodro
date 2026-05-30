@@ -1,0 +1,64 @@
+@use "@/styles/colors"  as colors;
+
+
+.home-slider {
+  position: relative;
+  @media (max-width: 900px) {
+    padding-top: 0;
+  }
+  .custom-nav {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: colors.$first-color;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    @media (max-width: 990px) {
+      width: 22px;
+      height: 22px;
+    }
+    &:hover {
+      background: colors.$first-color;
+    }
+  }
+
+  .custom-prev {
+    left: 20px;
+    @media (max-width: 990px) {
+      left: 5px;
+    }
+  }
+
+  .custom-next {
+    right: 20px;
+    @media (max-width: 990px) {
+      right: 5px;
+    }
+  }
+
+  .custom-pagination {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    z-index: 11;
+
+    span {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: colors.$second-color!important;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+
+

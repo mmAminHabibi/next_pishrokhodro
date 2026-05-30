@@ -1,0 +1,36 @@
+// Variables
+//$first-color: rgba(74, 49, 122, 0.86);
+$first-color: #8A8A8A;
+$second-color: #121212;
+$text-color: #666872;
+$bg-color: #EAEBF0;
+
+// Filters
+$filter-second: brightness(0) saturate(100%) invert(78%) sepia(9%) saturate(1581%) hue-rotate(337deg) brightness(90%) contrast(89%);
+$filter-first: brightness(0) saturate(100%) invert(19%) sepia(33%) saturate(1863%) hue-rotate(211deg) brightness(102%) contrast(100%);
+$filter-white: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(0%) hue-rotate(271deg) brightness(100%) contrast(102%);
+
+// Text colors
+.first-color { color: $first-color; }
+.second-color { color: $second-color; }
+.text-color { color: $text-color; }
+.text-white { color: white; }
+.text-black { color: black; }
+
+// Background colors
+.bg-first-color { background-color: white; }
+.bg-second-color { background-color: $first-color; }
+.bg-text-color { background-color: $text-color!important; }
+.bg-color { background-color: $bg-color; }
+.bg-btn { background-color: $second-color!important; }
+
+.border-bg-second-color{ border : 1px solid $first-color }
+// Filters
+.filter-second { filter: $filter-second; }
+.filter-first { filter: $filter-first; }
+
+// کلاس جداگانه برای hover روی سفید
+.filter-white {
+  filter: $filter-white;
+}
+

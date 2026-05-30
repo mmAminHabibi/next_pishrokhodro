@@ -1,0 +1,40 @@
+@use "@/styles/colors"  as colors;
+.home-feedback {
+  background: #f8f8f8;
+  &-item{
+    position: relative;
+    border-radius: 15px;
+    &:after{
+      content: "";
+      background: colors.$first-color;
+      width: 6px;
+      height: 57px;
+      position: absolute;
+      top: 23px;
+      right: 0;
+      border-radius: 12px 0 0 12px;
+      transform: scaleY(0);
+    }
+    &-profile{
+      img{
+        border-radius: 50%;
+      }
+    }
+    p{
+      text-align: justify;
+    }
+    &:hover:after{
+      height: 198px;
+    }
+  }
+
+}
+:global(.swiper-slide:not(.swiper-slide-active)) .home-feedback-item {
+  scale: 0.9;
+}
+
+:global(.swiper-slide-active) .home-feedback-item {
+  &:after{
+    transform: scaleY(1);
+  }
+}
